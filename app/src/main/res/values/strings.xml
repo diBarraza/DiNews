@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DInews</string>
+    <string name="title">The News</string>
+    <string name="subtitle">News from NewsAPI.org</string>
 </resources>
