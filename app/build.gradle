@@ -120,5 +120,9 @@ dependencies {
     // Constraintlayout
     implementation "androidx.constraintlayout:constraintlayout:2.0.0-beta4"
 
+    // https://mvnrepository.com/artifact/org.threeten/threetenbp
+    implementation group: 'org.threeten', name: 'threetenbp', version: '0.7.2'
+
+
 
 }

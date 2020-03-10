@@ -1,12 +1,10 @@
-package cl.ucn.disc.dsm.dinews;
+package cl.ucn.disc.dsm.dinews.model;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.threeten.bp.ZonedDateTime;
-
-import cl.ucn.disc.dsm.dinews.model.Noticia;
 
 /*
      * Copyright 2019-2020 Diego Urrutia Astorga <durrutia@ucn.cl>.
