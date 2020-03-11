@@ -13,7 +13,7 @@ public class MainApplication extends Application {
     /**
      * The Logger.
      */
-    private static final Logger log = LoggerFactory.getLogger(MainApplication.class);
+    public static final Logger log = LoggerFactory.getLogger(MainApplication.class);
 
     /**
      * Called when the application is starting, before any activity, service, or receiver objects (excluding content

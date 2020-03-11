@@ -15,6 +15,10 @@
  */
 package cl.ucn.disc.dsm.dinews.services;
 import cl.ucn.disc.dsm.dinews.model.Noticia;
+import cl.ucn.disc.dsm.dinews.services.NewsApi.NewsApiNoticiaService;
+import cl.ucn.disc.dsm.dinews.services.NewsApi.NewsApiResult;
+import retrofit2.Call;
+
 import java.util.List;
 
 /**
@@ -23,7 +27,6 @@ import java.util.List;
  * @author Diego Barraza Moreno.
  */
 public interface NoticiaService {
-
     /**
      * Get the Noticias from the backend.
      *
@@ -32,3 +35,9 @@ public interface NoticiaService {
      */
     List<Noticia> getNoticias(final int pageSize);
 }
+
+
+
+
+
+

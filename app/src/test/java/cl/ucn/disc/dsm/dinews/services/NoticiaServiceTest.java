@@ -27,7 +27,7 @@ public class NoticiaServiceTest {
     /**
      * The Logger.
      */
-    private static final Logger log = LoggerFactory.getLogger(NoticiaServiceTest.class);
+    public static final Logger log = LoggerFactory.getLogger(NoticiaServiceTest.class);
 
     /**
      * Test {@link NoticiaService#getNoticias(int)}
@@ -36,7 +36,7 @@ public class NoticiaServiceTest {
     public void testGetNoticiasMockup() {
 
         log.debug("Testing the NoticiaService ..");
-
+        
         // The noticia service
         final NoticiaService noticiaService = new MockupNoticiaService();
 
