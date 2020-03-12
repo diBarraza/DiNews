@@ -1,6 +1,10 @@
 package cl.ucn.disc.dsm.dinews;
 import android.app.Application;
+
 import androidx.appcompat.app.AppCompatDelegate;
+
+import com.jakewharton.threetenabp.AndroidThreeTen;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,11 +26,12 @@ public class MainApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
+        AndroidThreeTen.init(this);
         // Day and Night support
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY);
 
         log.debug("Initializing: Done.");
+
     }
 
 }

@@ -11,6 +11,7 @@ import android.widget.Toast;
 import cl.ucn.disc.dsm.dinews.R;
 import cl.ucn.disc.dsm.dinews.activities.adapters.NoticiaAdapter;
 import cl.ucn.disc.dsm.dinews.databinding.ActivityMainBinding;
+
 import cl.ucn.disc.dsm.dinews.model.Noticia;
 import cl.ucn.disc.dsm.dinews.services.NewsApi.NewsApiNoticiaService;
 import cl.ucn.disc.dsm.dinews.services.NoticiaService;
