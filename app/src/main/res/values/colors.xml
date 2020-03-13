@@ -35,4 +35,38 @@
 
     <color name="toolbarTitleTextColor">@color/g0</color>
     <color name="toolbarSubtitleTextColor">@color/g50</color>
+
+    <color name="orange0">#FFFFFF</color>
+    <color name="orange50">#FBE9E7</color>
+    <color name="orange100">#FFCCBC</color>
+    <color name="orange200">#FFAB91</color>
+    <color name="orange300">#FF8A65</color>
+    <color name="orange400">#FF7043</color>
+    <color name="orange500">#FF5722</color>
+    <color name="orange600">#F4511E</color>
+    <color name="orange700">#E64A19</color>
+    <color name="orange800">#D84315</color>
+    <color name="orange900">#BF360C</color>
+    <color name="orange1000">#9c290A</color>
+    <color name="orange1100">#7A1d08</color>
+    <color name="orange1200">#5C1406</color>
+    <color name="orange1300">#270803</color>
+    <color name="orange1400">#000000</color>
+
+    <color name="colorAccent1">@color/orange600</color>
+
+    <!-- Text -->
+    <color name="textColorPrimary1">@color/orange100</color>
+    <color name="textColorSecondary1">@color/orange200</color>
+    <color name="textColorTertiary1">@color/orange300</color>
+
+    <!-- Toolbar -->
+    <color name="statusBarColor1">@color/orange1000</color>
+    <color name="toolbarBackground1">@color/orange900</color>
+    <color name="windowBackground1">@color/orange1300</color>
+    <color name="dividerColor1">@color/orange400</color>
+    <color name="navigationBarColor1">@color/orange1000</color>
+
+    <color name="toolbarTitleTextColor1">@color/orange100</color>
+    <color name="toolbarSubtitleTextColor1">@color/orange50</color>
 </resources>

@@ -1,7 +1,12 @@
 package cl.ucn.disc.dsm.dinews.services.NewsApi;
 
+import android.os.Build;
+
+import com.squareup.okhttp.OkHttpClient;
+
 import net.openhft.hashing.LongHashFunction;
 
+import org.apache.commons.lang3.builder.Builder;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.threeten.bp.ZonedDateTime;
@@ -11,11 +16,14 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import javax.xml.transform.Transformer;
 
 import cl.ucn.disc.dsm.dinews.model.Noticia;
+import okhttp3.Request;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;
 import retrofit2.HttpException;
 import retrofit2.Response;
@@ -36,6 +44,12 @@ public class NewsApiNoticiaService {
      * The Constructor.
      */
     public NewsApiNoticiaService() {
+        // Logging with slf4j
+        final HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor(log::debug)
+                .setLevel(HttpLoggingInterceptor.Level.BODY);
+
+        // Web Client
+        final OkHttpClient httpClient = new OkHttpClient().clone();
 
         // https://futurestud.io/tutorials/retrofit-getting-started-and-android-client
         this.newsApi = new Retrofit.Builder()
@@ -49,6 +63,21 @@ public class NewsApiNoticiaService {
                 .build()
                 // .. get the NewsApi.
                 .create(NewsApi.class);
+        /*
+        * // Web Client
+    final OkHttpClient httpClient = new Builder()
+        .connectTimeout(5, TimeUnit.SECONDS)
+        .writeTimeout(5, TimeUnit.SECONDS)
+        .readTimeout(5, TimeUnit.SECONDS)
+        .callTimeout(10, TimeUnit.SECONDS)
+        .addNetworkInterceptor(loggingInterceptor)
+        .build();
+        * */
+
+
+
+
+
     }
 
     /**
